@@ -5,17 +5,24 @@ namespace MaoriQuiz
     {
         public static void Main()
         {
-
+            //string is used here to represent the answer of the questions asked
             string answer1 = "";
             string answer2 = "";
             string answer3 = "";
             string answer4 = "";
             string answer5 = "";
+
+            /*This is an array to repreent a fixed length ordered collection of values with the same type to indicate that this is a three leveled quiz.
+             * I used the array so it makes it easier to organize and operate on large amounts of data. So instead of creating mulitple variables, I can just create one array that stores it all. */  
             string[] test = { "1", "2", "3" };
-            Console.WriteLine("Welcome to my quiz user!(please type your answers in lower case letters)\nWhat is your name?\n");
-            string name = Console.ReadLine();
 
+            //introduction
+            Console.WriteLine("Welcome to my quiz user!(please type your answers in lower case letters)\n\nWhat is your name?\n");
 
+            //string is used here to store the name of the user in 'name' and Console.ReadLine() is used to take an inout from the user 
+            string name = Console.ReadLine(); 
+
+            //
             play();
             void play()
 
@@ -23,14 +30,12 @@ namespace MaoriQuiz
                 int score = 0;
                 Console.Clear();
 
-                // INTRODUCTION 
+                //introduction
+
+                Console.WriteLine("Welcome " + name + " this program is a 15 question Teo Reo Maori quiz.\n\n");
 
 
-                Console.WriteLine("Welcome, this program is a 15 question Teo Reo Maori quiz.\n\n");
-
-
-
-                Console.WriteLine("There are three levels, please enter the number you wish to do\n1. Basic\n2. Intermediate\n3. Advanced\n");
+                Console.WriteLine("There are three levels, please enter the number you wish to do\n1. Basic\n2. Intermediate\n3. Advanced\n"); 
                 string userLevel = Console.ReadLine();
 
                 Console.WriteLine(userLevel);

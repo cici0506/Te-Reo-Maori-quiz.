@@ -5,7 +5,7 @@ namespace MaoriQuiz
     {
         public static void Main()
         {
-            //string is used here to represent the answer of the questions asked
+            //variable to store the answer
             string answer1 = "";
             string answer2 = "";
             string answer3 = "";
@@ -29,7 +29,7 @@ namespace MaoriQuiz
             //introduction
             Console.WriteLine("Welcome to my quiz user!(please type your answers in lower case letters)\n\nWhat is your name?\n");
 
-            //string is used here to store the name of the user in 'name' and Console.ReadLine() is used to take an inout from the user 
+            //prompt user for name
             string name = Console.ReadLine(); 
 
             //
@@ -40,12 +40,17 @@ namespace MaoriQuiz
                 int score = 0;
                 Console.Clear();
 
-                //introduction
-
+                /*
+                    introduction with user's name displayed
+                    prompt user to enter a level
+                    read userlevel
+                    display option not found
+                    
+                 */
                 Console.WriteLine("Welcome " + name + " this program is a 45 question Teo Reo Maori quiz.\n\n");
 
-
                 Console.WriteLine("There are three levels, please enter the number you wish to do\n1. Basic\n2. Intermediate\n3. Advanced\n"); 
+                
                 string userLevel = Console.ReadLine();
 
                 Console.WriteLine(userLevel);
@@ -54,6 +59,7 @@ namespace MaoriQuiz
                 {
                     quiz();
                 }
+               
                 else Console.WriteLine("Sorry, this option is not found.\nPlease enter a valid number\n");
                 Environment.Exit(0);
                 Console.Clear();
@@ -536,7 +542,7 @@ namespace MaoriQuiz
                     void end()
                     {
                         Console.Clear();
-                        Console.WriteLine("Well done! You made it to the end of the quiz\n" + name + " your score: " + score + "\nDo you wish to play again?\nPlease press 'y' to restart or any other key to exit\n");
+                        Console.WriteLine("Well done! You made it to the end of the quiz\n\n" + name + " your score: " + score + "\n\nDo you wish to play again?\nPlease press 'y' to restart or any other key to exit\n");
                         string restart = Console.ReadLine();
                         if (restart == "y")
                         {

@@ -531,12 +531,120 @@ namespace MaoriQuiz
                     {
                         Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
                     }
+                    Console.WriteLine("Question 6\nWhat does 'november' mean in Maori " + name + "?\na.maramataka\nb.marama\nc.whiri-a-rangi\n");
+                    answer6 = Console.ReadLine();
+                    Console.Clear();
+                    if (answer6  == "c")
+                    {
+                        score = score + 1;
+                        Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                    }
+                    Console.WriteLine("Question 7\nWhat does 'west' mean in Maori " + name + "?\na.tohutohu\nb.uru\nc.kapehu\n");
+                    answer7 = Console.ReadLine();
+                    Console.Clear();
+                    if (answer7 == "b")
+                    {
+                        score = score + 1;
+                        Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                    }
+                    Console.WriteLine("Question 8\nWhat does 'earth' mean in Maori " + name + "?\na.papa\nb.aorangi\nc.ao\n");
+                    answer9 = Console.ReadLine();
+                    Console.Clear();
+                    if (answer9 == "a")
+                    {
+                        score = score + 1;
+                        Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                    }
+                    Console.WriteLine("Question 10\nWhat does 'star' mean in Maori " + name + "?\na.whetu\nb.ra\nc.maramara\n");
+                    answer10 = Console.ReadLine();
+                    Console.Clear();
+                    if (answer10 == "a")
+                    {
+                        score = score + 1;
+                        Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                    }
+                    Console.WriteLine("Question 11\nWhat does 'dance' mean in Maori " + name + "?\na.takahurihuri\nb.peruperu\nc.parani\n");
+                    answer11 = Console.ReadLine();
+                    Console.Clear();
+                    if (answer11 == "b")
+                    {
+                        score = score + 1;
+                        Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                    }
+                    Console.WriteLine("Question 12\nWhat does 'authority' mean in Maori " + name + "?\na.arahitanga\nb.whakahaere\nc.mana\n");
+                    answer12 = Console.ReadLine();
+                    Console.Clear();
+                    if (answer12 == "c")
+                    {
+                        score = score + 1;
+                        Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                    }
+                    Console.WriteLine("Question 13\nWhat does 'treasure' mean in Maori " + name + "?\na.taonga\nb.kohatu\nc.utu nui\n");
+                    answer13 = Console.ReadLine();
+                    Console.Clear();
+                    if (answer13 == "a")
+                    {
+                        score = score + 1;
+                        Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                    }
+                    Console.WriteLine("Question 14\nWhat does 'confiscate' mean in Maori " + name + "?\na.tango\nb.hopukina\nc.raupatu\n");
+                    answer14 = Console.ReadLine();
+                    Console.Clear();
+                    if (answer14 == "c")
+                    {
+                        score = score + 1;
+                        Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                    }
+                    Console.WriteLine("Question 15\nWhat does 'guests' mean in Maori " + name + "?\na.kaihoko\nb.manuhiri\nc.kiritaki\n");
+                    answer15 = Console.ReadLine();
+                    Console.Clear();
+                    if (answer15 == "b")
+                    {
+                        score = score + 1;
+                        Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                    }
                     end();
 
                     void end()
                     {
                         Console.Clear();
-                        Console.WriteLine("Well done! You made it to the end of the quiz\n" + name + " your score: " + score + "\nDo you wish to play again?\nPlease press 'y' to restart or any other key to exit\n");
+                        Console.WriteLine("Well done! You made it to the end of the quiz\n\n" + name + " your score: " + score + "\n\nDo you wish to play again?\nPlease press 'y' to restart or any other key to exit\n");
                         string restart = Console.ReadLine();
                         if (restart == "y")
                         {

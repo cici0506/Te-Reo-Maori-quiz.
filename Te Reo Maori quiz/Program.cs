@@ -5,7 +5,7 @@ namespace MaoriQuiz
     {
         public static void Main()
         {
-            //variable to store the answer
+            //declare variable answer1 to answer15 type string
             string answer1 = "";
             string answer2 = "";
             string answer3 = "";
@@ -38,13 +38,15 @@ namespace MaoriQuiz
 
             {
                 int score = 0;
+
                 Console.Clear();
 
                 /*
-                    introduction with user's name displayed
+                    display introduction with user's name displayed
                     prompt user to enter a level
                     read userlevel
-                    display option not found
+                    if user enters an invalid number, display option not found
+                    use Console.Clear() to clear when user types enter to go next so it does not pile up 
                     
                  */
                 Console.WriteLine("Welcome " + name + " this program is a 45 question Teo Reo Maori quiz.\n\n");

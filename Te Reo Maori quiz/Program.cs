@@ -22,9 +22,7 @@ namespace MaoriQuiz
             string answer14 = "";
             string answer15 = "";
 
-            /* this is an array to represent a fixed length ordered collection of values with the same type to indicate that this is a three leveled quiz.
-             * I used the array, so it makes it easier to organize and operate on large amounts of data. So instead of creating multiple variables, I can just create one array that stores it all.
-             */
+        // declare method to store the levels 
             string[] test = { "1", "2", "3" };
 
             // display intro
@@ -58,7 +56,7 @@ namespace MaoriQuiz
                 // if user enters an invalid number, display option not found
                 else Console.WriteLine("Sorry, this option is not found.\nPlease enter a valid number\n");
                 Environment.Exit(0);
-                // use Console.Clear() to clear when user types enter to go next, so it does not pile up 
+                // clear everything before when user types enter to go next 
                 Console.Clear();
                 // begin quiz
                 void quiz()
@@ -661,7 +659,7 @@ namespace MaoriQuiz
                     void end()
                     {
                         Console.Clear();
-                        // display end text + score and ask user if they wish to play again, if so, press y, if not press any other key
+                        // display end text + score and ask user if they wish to play again, if so, press y or any other key to exit
                         Console.WriteLine("Well done! You made it to the end of the quiz\n\n" + name + " your score: " + score + "\n\nDo you wish to play again?\nPlease press 'y' to restart or any other key to exit\n");
                         // read restart
                         string restart = Console.ReadLine();

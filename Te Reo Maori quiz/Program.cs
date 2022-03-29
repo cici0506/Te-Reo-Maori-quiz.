@@ -64,202 +64,237 @@ namespace MaoriQuiz
                     Console.Clear();
 
                     /* check if userLevel is equal to 1 then display questions 1 to 15
-                     * if answer is correct then add 1 to user's score
-                     * if answer is incorrect then display wrong and user's score remains the same
+                     * allow the user to answer again if answer is incorrect
+                     * if answer is incorrect then display wrong
                      */
                     if (userLevel == "1")
                     {
-                        Console.WriteLine("Question 1\nWhat is the color of an apple in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kowhai\nb.kikorangi\nc.whero\n");
-                        answer1 = Console.ReadLine();
-                        Console.Clear();
+                        string testAnswer1 = "c";
+                        string testAnswer2 = "a";
+                        string testAnswer3 = "b";
+                        string testAnswer4 = "a";
+                        string testAnswer5 = "b";
+                        string testAnswer6 = "c";
+                        string testAnswer7 = "b";
+                        string testAnswer8 = "a";
+                        string testAnswer9 = "c";
+                        string testAnswer10 = "a";
+                        string testAnswer11 = "a";
+                        string testAnswer12 = "a";
+                        string testAnswer13 = "c";
+                        string testAnswer14 = "b";
+                        string testAnswer15 = "a";
+                        do
+                        {
+                            Console.WriteLine("Question 1\nWhat is the color of an apple in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kowhai\nb.kikorangi\nc.whero\n");
+                            answer1 = Console.ReadLine();
+                            Console.Clear();
+                        } while (answer1 != testAnswer1);
                         if (answer1 == "c")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
                         }
+                        do { 
                         Console.WriteLine("Question 2\nWhat does 'hello' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kia ora\nb.ka pai\nc.morena\n");
                         answer2 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer2 != testAnswer2);
                         if (answer2 == "a")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
                         }
-
+                        do { 
                         Console.WriteLine("Question 3\nWhat does 'New Zealand' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kiwi\nb.aotearoa\nc.maunga\n");
                         answer3 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer3 != testAnswer3);
                         if (answer3 == "b")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
                         }
+                        do { 
                         Console.WriteLine("Question 4\nWhat does 'sea' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.moana\nb.wai\nc.kirikiri\n");
                         answer4 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer4 != testAnswer4);
                         if (answer4 == "a")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 5\nWhat does 'family' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.tuahine\nb.whanau\nc.teina\n");
                         answer5 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer5 != testAnswer5);
                         if (answer5 == "b")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 6\nWhat does 'love' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.te aroha\nb.pai\nc.aroha\n");
                         answer6 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer6 != testAnswer6);
                         if (answer6 == "c")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 7\nWhat does 'tribe' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.ropu matawaka\nb.iwi\nc.whare rangatira\n");
                         answer7 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer7 != testAnswer7);
                         if (answer7 == "b")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 8\nWhat does 'see you later' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.ka kite ano\nb.poroporoaki\nc.kia roa\n");
                         answer8 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer8 != testAnswer8);
                         if (answer8 == "a")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 9\nWhat does 'sit' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.nohoanga\nb.okiokinga\nc.e noho\n");
                         answer9 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer9 != testAnswer9);
                         if (answer9 == "c")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 10\nWhat does 'welcome' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.nau mai\nb.tena koutou\nc.whakaaetanga\n");
                         answer10 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer10 != testAnswer10);
                         if (answer10 == "a")
                         {
-                            score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 11\nWhat does 'food' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kai\nb.whangai\nc.tunu kai\n");
                         answer11 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer11 != testAnswer11);
                         if (answer11 == "a")
                         {
                             score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 12\nWhat does 'canoe' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.waka\nb.poti\nc.waka waka\n");
                         answer12 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer12 != testAnswer12);
                         if (answer12 == "a")
                         {
                             score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 13\nWhat does 'mountain' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.teitei\nb.tihi\nc.maunga\n");
                         answer13 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer13 != testAnswer13);
                         if (answer13 == "c")
                         {
                             score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 14\nWhat does 'good morning' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.ata\nb.morena\nc.awatea\n");
                         answer14 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer14 != testAnswer14);
                         if (answer14 == "b")
                         {
                             score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
+                        do { 
                         Console.WriteLine("Question 15\nWhat does 'ten' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.tekau\nb.whakatekau\nc.hekaono\n");
                         answer15 = Console.ReadLine();
                         Console.Clear();
+                        } while (answer15 != testAnswer15);
                         if (answer15 == "a")
                         {
                             score = score + 1;
-                            Console.WriteLine("Correct!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Correct!\n" + name);
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name);
 
                         }
                         end();
@@ -282,7 +317,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                         }
                         Console.WriteLine("Question 2\nWhat does 'sacred' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.manaakitia\nb.tapu\nc.arohaina\n");
                         answer2 = Console.ReadLine();
@@ -294,7 +329,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                         }
 
                         Console.WriteLine("Question 3\nWhat does 'land' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.rohe\nb.whenua\nc.eka\n");
@@ -307,7 +342,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                         }
                         Console.WriteLine("Question 4\nWhat does 'greenstone' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kakariki\nb.kohatu\nc.pounamu\n");
                         answer4 = Console.ReadLine();
@@ -319,7 +354,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
                         }
                         Console.WriteLine("Question 5\nWhat does 'ancestor' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.tupuna\nb.kaiwhakarewa\nc.kaihanga\n");
@@ -332,7 +367,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }  Console.WriteLine("Question 6\nWhat does 'children' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.uri\nb.tamariki\nc.iti\n");
@@ -345,7 +380,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -359,7 +394,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -373,7 +408,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -387,7 +422,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -401,7 +436,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -415,7 +450,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -429,7 +464,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -443,7 +478,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -457,7 +492,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -471,7 +506,7 @@ namespace MaoriQuiz
                         }
                         else
                         {
-                            Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                            Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
 
                         }
@@ -494,7 +529,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 2\nWhat does 'aeroplane' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.rereangi\nb.hau\nc.tere\n");
                     answer2 = Console.ReadLine();
@@ -506,7 +541,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
 
                     Console.WriteLine("Question 3\nWhat does 'birthday' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.whanautanga\nb.huritau\nc.whakanui\n");
@@ -519,7 +554,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 4\nWhat does 'thunderstorm' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.whatitiri\nb.awha\nc.ua\n");
                     answer4 = Console.ReadLine();
@@ -531,7 +566,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
                     }
                     Console.WriteLine("Question 5\nWhat does 'sincerity' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.ngakau nui\nb.pono\nc.whakapono pai\n");
@@ -544,7 +579,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 6\nWhat does 'november' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.maramataka\nb.marama\nc.whiri-a-rangi\n");
                     answer6 = Console.ReadLine();
@@ -556,7 +591,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 7\nWhat does 'west' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.tohutohu\nb.uru\nc.kapehu\n");
                     answer7 = Console.ReadLine();
@@ -568,7 +603,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 8\nWhat does 'earth' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.papa\nb.aorangi\nc.ao\n");
                     answer9 = Console.ReadLine();
@@ -580,7 +615,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 10\nWhat does 'star' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.whetu\nb.ra\nc.maramara\n");
                     answer10 = Console.ReadLine();
@@ -592,7 +627,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 11\nWhat does 'dance' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.takahurihuri\nb.peruperu\nc.parani\n");
                     answer11 = Console.ReadLine();
@@ -604,7 +639,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 12\nWhat does 'authority' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.arahitanga\nb.whakahaere\nc.mana\n");
                     answer12 = Console.ReadLine();
@@ -616,7 +651,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 13\nWhat does 'treasure' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.taonga\nb.kohatu\nc.utu nui\n");
                     answer13 = Console.ReadLine();
@@ -628,7 +663,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 14\nWhat does 'confiscate' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.tango\nb.hopukina\nc.raupatu\n");
                     answer14 = Console.ReadLine();
@@ -640,7 +675,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     Console.WriteLine("Question 15\nWhat does 'guests' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kaihoko\nb.manuhiri\nc.kiritaki\n");
                     answer15 = Console.ReadLine();
@@ -652,7 +687,7 @@ namespace MaoriQuiz
                     }
                     else
                     {
-                        Console.WriteLine("Wrong!\n" + name + "'s score:" + score + "\n");
+                        Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                     }
                     end();
 

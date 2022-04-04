@@ -23,8 +23,7 @@ namespace MaoriQuiz
             play();
         }
         static void play()
-        {
-            
+        {           
             string answer = "";
            
             int score = 0;
@@ -32,7 +31,6 @@ namespace MaoriQuiz
             Console.Clear();
             Console.WriteLine("Welcome to my quiz user!(please type your answer in lower case letters)\n\nWhat is your name?\n");
 
-           
             string name = Console.ReadLine();
 
            
@@ -89,25 +87,21 @@ namespace MaoriQuiz
           
                 string restart = Console.ReadLine();
                
-                
                 if (restart == "y")
                 {
                     play();
                 }
 
-          
                 else
                 {
                     Console.Write("Thanks for using this program!\nPress enter to exit");
                     // use Environment.Exit(0) to return to the operating system. Use 0 to indicate that the process completed successfully
                     Environment.Exit(0);
-
                 }
             }
              void level1()
                 
             {
-                
                     Console.WriteLine("Question 1\nWhat is the color of an apple in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kowhai\nb.kikorangi\nc.whero\n");
                     answer = Console.ReadLine();
                 while(answer != "a" && answer != "b" && answer != "c")
@@ -131,7 +125,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -151,7 +144,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -171,7 +163,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -191,7 +182,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -211,7 +201,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -252,10 +241,9 @@ namespace MaoriQuiz
                     Console.Clear();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
-                 }
+                }
                 if (answer == "a")
                 {
                     score = score + 1;
@@ -270,7 +258,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -290,7 +277,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -310,7 +296,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -330,7 +315,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -350,7 +334,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -370,7 +353,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -390,7 +372,6 @@ namespace MaoriQuiz
                     answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
-
                     Console.WriteLine("Please enter a valid option");
                     answer = Console.ReadLine();
                 }
@@ -427,6 +408,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 2\nWhat does 'sacred' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.manaakitia\nb.tapu\nc.arohaina\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -462,6 +444,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 4\nWhat does 'greenstone' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kakariki\nb.kohatu\nc.pounamu\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -478,8 +461,8 @@ namespace MaoriQuiz
                 else
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
-
                 }
+
                 Console.WriteLine("Question 5\nWhat does 'ancestor' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.tupuna\nb.kaiwhakarewa\nc.kaihanga\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -496,9 +479,8 @@ namespace MaoriQuiz
                 else
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
-
-
                 }
+
                 Console.WriteLine("Question 6\nWhat does 'children' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.uri\nb.tamariki\nc.iti\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -515,9 +497,8 @@ namespace MaoriQuiz
                 else
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
-
-
                 }
+
                 Console.WriteLine("Question 7\nWhat does 'elder' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kaumatua\nb.tangata pakeke\nc.tupuna\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -534,9 +515,8 @@ namespace MaoriQuiz
                 else
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
-
-
                 }
+
                 Console.WriteLine("Question 8\nWhat does 'prayer' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.wawao\nb.inoi\nc.karakia\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -553,9 +533,8 @@ namespace MaoriQuiz
                 else
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
-
-
                 }
+
                 Console.WriteLine("Question 9\nWhat does 'work' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.mahi\nb.ratonga\nc.taumahi\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -572,9 +551,8 @@ namespace MaoriQuiz
                 else
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
-
-
                 }
+
                 Console.WriteLine("Question 10\nWhat does 'stomach' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.whekau\nb.puku\nc.puku puku\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -591,9 +569,8 @@ namespace MaoriQuiz
                 else
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
-
-
                 }
+
                 Console.WriteLine("Question 11\nWhat does 'water' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.maku\nb.inu\nc.wai\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -610,9 +587,8 @@ namespace MaoriQuiz
                 else
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
-
-
                 }
+
                 Console.WriteLine("Question 12\nWhat does 'saturday' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.okiokinga\nb.wiki\nc.rahoroi\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -632,6 +608,7 @@ namespace MaoriQuiz
 
 
                 }
+
                 Console.WriteLine("Question 13\nWhat does 'listen' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.whakarongo\nb.rongo\nc.aro mai\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -651,6 +628,7 @@ namespace MaoriQuiz
 
 
                 }
+
                 Console.WriteLine("Question 14\nWhat does 'thank you' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.whakaae\nb.mihi\nc.maioha\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -670,6 +648,7 @@ namespace MaoriQuiz
 
 
                 }
+
                 Console.WriteLine("Question 15\nWhat does 'talk' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.korerorero\nb.kohukohu\nc.korero\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -711,6 +690,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 2\nWhat does 'aeroplane' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.rereangi\nb.hau\nc.tere\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -746,6 +726,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 4\nWhat does 'thunderstorm' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.whatitiri\nb.awha\nc.ua\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -764,6 +745,7 @@ namespace MaoriQuiz
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
 
                 }
+
                 Console.WriteLine("Question 5\nWhat does 'sincerity' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.ngakau nui\nb.pono\nc.whakapono pai\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -781,6 +763,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 6\nWhat does 'november' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.maramataka\nb.marama\nc.whiri-a-rangi\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -798,6 +781,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 7\nWhat does 'west' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.tohutohu\nb.uru\nc.kapehu\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -815,6 +799,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 8\nWhat does 'earth' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.papa\nb.aorangi\nc.ao\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -832,6 +817,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 10\nWhat does 'star' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.whetu\nb.ra\nc.maramara\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -849,6 +835,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 11\nWhat does 'dance' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.takahurihuri\nb.peruperu\nc.parani\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -866,6 +853,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 12\nWhat does 'authority' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.arahitanga\nb.whakahaere\nc.mana\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -883,6 +871,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 13\nWhat does 'treasure' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.taonga\nb.kohatu\nc.utu nui\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -900,6 +889,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 14\nWhat does 'confiscate' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.tango\nb.hopukina\nc.raupatu\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
@@ -917,6 +907,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
+
                 Console.WriteLine("Question 15\nWhat does 'guests' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kaihoko\nb.manuhiri\nc.kiritaki\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")

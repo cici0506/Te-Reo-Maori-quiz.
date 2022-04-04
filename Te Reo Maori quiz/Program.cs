@@ -99,9 +99,17 @@ namespace MaoriQuiz
                     Environment.Exit(0);
                 }
             }
+
+            /* if user selects lvl 1, then play
+             * display questions 1 to 15
+             * if user enters an invalid option, then enter error message and allow user to enter again
+             * if user enters correct answer, then display correct and add 1 to score
+             * if answer is incorrect, then display incorrect and score remains the same
+             * clear everything before so page looks clean
+             */    
              void level1()
                 
-            {
+             {
                     Console.WriteLine("Question 1\nWhat is the color of an apple in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kowhai\nb.kikorangi\nc.whero\n");
                     answer = Console.ReadLine();
                 while(answer != "a" && answer != "b" && answer != "c")
@@ -389,7 +397,15 @@ namespace MaoriQuiz
 
                 end();
             }
-             void level2()
+
+            /* if user selects lvl 2, then play
+            * display questions 1 to 15
+            * if user enters an invalid option, then enter error message and allow user to enter again
+            * if user enters correct answer, then display correct and add 1 to score
+            * if answer is incorrect, then display incorrect and score remains the same
+            * clear everything before so page looks clean
+            */
+            void level2()
             {
                 Console.WriteLine("Question 1\nWhat does 'chief' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.tumuaki\nb.rangatira\nc.kapene\n");
                 answer = Console.ReadLine();
@@ -670,6 +686,14 @@ namespace MaoriQuiz
                 }
                 end();
             }
+
+            /* if user selects lvl 3, then play
+            * display questions 1 to 15
+            * if user enters an invalid option, then enter error message and allow user to enter again
+            * if user enters correct answer, then display correct and add 1 to score
+            * if answer is incorrect, then display incorrect and score remains the same
+            * clear everything before so page looks clean
+            */
             void level3()
             {
 

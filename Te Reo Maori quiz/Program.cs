@@ -5,31 +5,39 @@ namespace MaoriQuiz
     {
         static void Main(string[] args)
         {
-
-
-            // declare method to store the levels 
-            int[] test = { 1, 2, 3 };
-
-            //declare play() so that the method returns no value            
+            /* declare play() so that the method returns no value 
+             * prompt user for name
+             * display introduction with user's name displayed           
+             * prompt user to enter a level
+             * if user scores less than or equal to 3, then display message
+             * if user scores less than or equal to 7, then dispplay message
+             * if user displays less than or equal to 9, then display message
+             * if user scores 10, then display message
+             * display end text + score and ask user if they wish to play again, if so, press y or any other key to end
+             * if restart is equal to y then play
+             * read restart
+             * if user press any other keys, then end quiz
+             * thank the user for playing
+             */
+           
             play();
         }
         static void play()
         {
-            //declare variable answer1 to answer15 type string
-            string answer;
+            
+            string answer = "";
            
             int score = 0;
 
             Console.Clear();
             Console.WriteLine("Welcome to my quiz user!(please type your answer in lower case letters)\n\nWhat is your name?\n");
 
-            //prompt user for name
+           
             string name = Console.ReadLine();
 
-            // display introduction with user's name displayed
+           
             Console.WriteLine("\nWelcome " + name + " this program is a 45 question Teo Reo Maori quiz.\n\n");
 
-            //prompt user to enter a level
             Console.WriteLine("There are three levels, please enter the number you wish to do\n1. Basic\n2. Intermediate\n3. Advanced\n");
 
             int selection;
@@ -48,8 +56,7 @@ namespace MaoriQuiz
            
             else if (selection == 2)
             {
-                level2();
-               
+                level2(); 
             }
 
             else
@@ -61,8 +68,6 @@ namespace MaoriQuiz
             {
                 Console.Clear();
 
-                // display end text + score and ask user if they wish to play again, if so, press y or any other key to end
-                Console.WriteLine("Well done! You made it to the end of the quiz\n\nDo you wish to play again?\nPlease press y to restart or any other key to end\n");
                 if (score <= 3)
                 {
                     Console.WriteLine(name + " your score: " + score + "\n\nBetter luck next time!");
@@ -79,19 +84,20 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine(name + " your score: " + score + "\n\nWELL DONE! You got a perfect score!");
                 }
-                // read restart
-                string restart = Console.ReadLine();
-                // if restart is equal to y then play
 
+                Console.WriteLine("\n\nWell done! You made it to the end of the quiz\n\nDo you wish to play again?\n\nPlease press y to restart or any other key to end\n");
+          
+                string restart = Console.ReadLine();
+               
+                
                 if (restart == "y")
                 {
                     play();
                 }
 
-                // if user press any other keys, then end quiz
+          
                 else
                 {
-                    // thank the user for playing
                     Console.Write("Thanks for using this program!\nPress enter to exit");
                     // use Environment.Exit(0) to return to the operating system. Use 0 to indicate that the process completed successfully
                     Environment.Exit(0);

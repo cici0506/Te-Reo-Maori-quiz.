@@ -33,34 +33,8 @@ namespace MaoriQuiz
 
             string name = Console.ReadLine();
 
-           
             Console.WriteLine("\nWelcome " + name + " this program is a 45 question Teo Reo Maori quiz.\n\n");
-
-            Console.WriteLine("There are three levels, please enter the number you wish to do\n1. Basic\n2. Intermediate\n3. Advanced\n");
-
-            int selection;
-            while (!int.TryParse(Console.ReadLine(), out selection) || selection <= 0 || selection >= 4)
-            {
-                Console.WriteLine("Please enter a valid number");
-            }
-
-            Console.WriteLine(selection);
-            Console.Clear();
-
-            if (selection == 1)
-            {
-                level1();                
-            }
-           
-            else if (selection == 2)
-            {
-                level2(); 
-            }
-
-            else
-            {
-                level3();
-            }
+            menu();
 
             void end()
             {
@@ -74,7 +48,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine(name + " your score: " + score + "\n\nGOOD TRY! Keep practicing!");
                 }
-                else if (score <= 9)
+                else if (score <= 14)
                 {
                     Console.WriteLine(name + " your score: " + score + "\n\nSO CLOSE! Don't give up!");
                 }
@@ -83,33 +57,65 @@ namespace MaoriQuiz
                     Console.WriteLine(name + " your score: " + score + "\n\nWELL DONE! You got a perfect score!");
                 }
 
-                Console.WriteLine("\n\nWell done! You made it to the end of the quiz\n\nDo you wish to play again?\n\nPlease press y to restart or any other key to end\n");
+                Console.WriteLine("\n\nWell done! You made it to the end of the quiz\n\nTo choose a new level please press m or any other key to end\n");
           
                 string restart = Console.ReadLine();
                
-                if (restart == "y")
+                if (restart == "m")
                 {
-                    play();
+                    Console.Clear();
+                    menu();
                 }
-
                 else
                 {
-                    Console.Write("Thanks for using this program!\nPress enter to exit");
+                    Console.Write("Thanks for using this program!\nPress enter to exit\n\n");
                     // use Environment.Exit(0) to return to the operating system. Use 0 to indicate that the process completed successfully
                     Environment.Exit(0);
                 }
             }
+            void menu()
+            {
+                Console.WriteLine("There are three levels, please enter the number you wish to do\n1. Basic\n2. Intermediate\n3. Advanced\n");
 
-            /* if user selects lvl 1, then play
-             * display questions 1 to 15
-             * if user enters an invalid option, then enter error message and allow user to enter again
-             * if user enters correct answer, then display correct and add 1 to score
-             * if answer is incorrect, then display incorrect and score remains the same
-             * clear everything before so page looks clean
-             */    
-             void level1()
+                int selection;
+                while (!int.TryParse(Console.ReadLine(), out selection) || selection <= 0 || selection >= 4)
+                {
+                    Console.WriteLine("Please enter a valid number");
+                }
+                Console.WriteLine(selection);
+                Console.Clear();
+
+                if (selection == 1)
+                {
+                    level1();
+                }
+
+               else if (selection == 2)
+                {
+                    level2();
+                }
+
+                else if (selection == 3)
+                {
+                    level3();
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid option");
+                    menu();
+                }
+            }
+
+                /* if user selects lvl 1, then play
+                 * display questions 1 to 15
+                 * if user enters an invalid option, then enter error message and allow user to enter again
+                 * if user enters correct answer, then display correct and add 1 to score
+                 * if answer is incorrect, then display incorrect and score remains the same
+                 * clear everything before so page looks clean
+                 */
+                void level1()
                 
-             {
+                {
                     Console.WriteLine("Question 1\nWhat is the color of an apple in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kowhai\nb.kikorangi\nc.whero\n");
                     answer = Console.ReadLine();
                 while(answer != "a" && answer != "b" && answer != "c")
@@ -425,7 +431,7 @@ namespace MaoriQuiz
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
 
-                Console.WriteLine("Question 2\nWhat does 'sacred' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.manaakitia\nb.tapu\nc.arohaina\n");
+                Console.WriteLine("Question 2\nWhat does 'reptile' mean in Maori " + name + "?\n\n(please type the answer a, b or c)\n\na.kararehe\nb.ngarara\nc.tuatara\n");
                 answer = Console.ReadLine();
                 while (answer != "a" && answer != "b" && answer != "c")
                 {
@@ -955,9 +961,3 @@ namespace MaoriQuiz
 
     }
 }
-
-
-
-
-
-

@@ -68,7 +68,7 @@ namespace MaoriQuiz
                 }
                 else
                 {
-                    Console.Write("Thanks for using this program!\nPress enter to exit\n\n");
+                    Console.Write("Thanks for using this program!...Goodbye\nPress enter to exit\n\n");
                     // use Environment.Exit(0) to return to the operating system. Use 0 to indicate that the process completed successfully
                     Environment.Exit(0);
                 }

@@ -10,7 +10,7 @@ namespace MaoriQuiz
              * display introduction with user's name displayed           
              * prompt user to enter a level
              * if user scores less than or equal to 3, then display message
-             * if user scores less than or equal to 7, then dispplay message
+             * if user scores less than or equal to 7, then display message
              * if user displays less than or equal to 9, then display message
              * if user scores 10, then display message
              * display end text + score and ask user if they wish to play again, if so, press y or any other key to end
@@ -75,6 +75,8 @@ namespace MaoriQuiz
             }
             void menu()
             {
+                score = 0;
+
                 Console.WriteLine("There are three levels, please enter the number you wish to do\n1. Basic\n2. Intermediate\n3. Advanced\n");
 
                 int selection;
@@ -103,6 +105,7 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Please enter a valid option");
                     menu();
+
                 }
             }
 
@@ -400,7 +403,6 @@ namespace MaoriQuiz
                 {
                     Console.WriteLine("Incorrect!\n" + name + "'s score:" + score + "\n");
                 }
-
                 end();
             }
 
